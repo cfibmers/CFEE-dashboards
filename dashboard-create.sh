@@ -20,7 +20,7 @@ prerequisites=("curl")
 for i in "${prerequisites[@]}"; do
 	isExist=$(command -v $i)
 	if [ -z "$isExist" ]; then
-		echo "$i not installed. Please install the required pre-requisites curl first"
+		echo "$i not installed. Please install the required pre-requisites $i first"
 		exit 1
 	fi
 done
