@@ -1,0 +1,353 @@
+{
+  "dashboard": {
+    "customerId": 9944,
+    "userId": 4990,
+    "domain": null,
+    "widgets": [
+      {
+        "showAs": "timeSeries",
+        "name": "Number of Cells",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 1,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "firehose_value_metric_bbs_present_cells",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Cell with Remaining Memory",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 1,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "firehose_value_metric_rep_capacity_remaining_memory",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Total Cell Memory",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 5,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "firehose_value_metric_rep_capacity_total_memory",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Total Cell Disk",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 5,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "firehose_value_metric_rep_capacity_total_disk",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Running Containers Per Cell",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 9,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "firehose_value_metric_rep_container_count",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Memory Reserved Per Cell",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 9,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "firehose_value_metric_rep_capacity_total_memory",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      }
+    ],
+    "scopeExpressionList": null,
+    "eventsOverlaySettings": {
+      "showNotificationsEnabled": true,
+      "filterNotificationsScopeFilter": true,
+      "filterNotificationsUserInputFilter": "",
+      "eventOverlayLimit": 1000,
+      "filterNotificationsTypeFilter": "all",
+      "filterNotificationsStateFilter": "all",
+      "filterNotificationsSeverityFilter": "all",
+      "filterNotificationsResolvedFilter": "all"
+    },
+    "schema": 2,
+    "name": "CFEE Cells Capacity ",
+    "public": false,
+    "favorite": false,
+    "shared": false,
+    "teamId": 3969,
+    "modifiedOn": 1574125344000,
+    "username": "ff1d25c81c197c3fb4f907fe0976f22d_8ca2ef99-a7bf-44a3-a2f0-0c785e6a70fc_ibmid-060001xby2@ibm.com",
+    "createdOn": 1573689564000,
+    "publicToken": null,
+    "autoCreated": false
+  }
+}

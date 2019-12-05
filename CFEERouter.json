@@ -1,0 +1,566 @@
+{
+  "dashboard": {
+    "customerId": 9944,
+    "userId": 4990,
+    "domain": null,
+    "widgets": [
+      {
+        "showAs": "timeSeries",
+        "name": "Rate Requests per second",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 1,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_rejected_requests_total",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_total_requests_total",
+            "propertyName": "v1",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Rate Responses per second",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 1,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_2_xx_total",
+            "propertyName": "v0",
+            "timeAggregation": "timeAvg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_3_xx_total",
+            "propertyName": "v1",
+            "timeAggregation": "timeAvg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_4_xx_total",
+            "propertyName": "v2",
+            "timeAggregation": "timeAvg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_5_xx_total",
+            "propertyName": "v3",
+            "timeAggregation": "timeAvg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Total Requests",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 5,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_total_requests_total",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_rejected_requests_total",
+            "propertyName": "v1",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Total Responses",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 5,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_2_xx_total",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_3_xx_total",
+            "propertyName": "v1",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_4_xx_total",
+            "propertyName": "v2",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_responses_5_xx_total",
+            "propertyName": "v3",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Latency",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 9,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "bosh_job_name",
+            "propertyName": "k3"
+          },
+          {
+            "id": "bosh_job_ip",
+            "propertyName": "k4"
+          },
+          {
+            "id": "firehose_value_metric_gorouter_latency",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Route Lookup Time",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 9,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_ip",
+            "propertyName": "k2"
+          },
+          {
+            "id": "bosh_job_name",
+            "propertyName": "k3"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k4"
+          },
+          {
+            "id": "firehose_value_metric_gorouter_route_lookup_time",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Rate Register Messages Received per second",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 13,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "bosh_job_ip",
+            "propertyName": "k3"
+          },
+          {
+            "id": "bosh_job_name",
+            "propertyName": "k4"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_registry_message_total",
+            "propertyName": "v0",
+            "timeAggregation": "timeAvg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Total Register Messages Received",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 13,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "bosh_deployment",
+            "propertyName": "k1"
+          },
+          {
+            "id": "bosh_job_id",
+            "propertyName": "k2"
+          },
+          {
+            "id": "bosh_job_ip",
+            "propertyName": "k3"
+          },
+          {
+            "id": "bosh_job_name",
+            "propertyName": "k4"
+          },
+          {
+            "id": "firehose_counter_event_gorouter_registry_message_total",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Total Routes Registered",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 17,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "firehose_value_metric_gorouter_total_routes",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      }
+    ],
+    "scopeExpressionList": null,
+    "eventsOverlaySettings": {
+      "showNotificationsEnabled": true,
+      "filterNotificationsScopeFilter": true,
+      "filterNotificationsUserInputFilter": "",
+      "eventOverlayLimit": 1000,
+      "filterNotificationsTypeFilter": "all",
+      "filterNotificationsStateFilter": "all",
+      "filterNotificationsSeverityFilter": "all",
+      "filterNotificationsResolvedFilter": "all"
+    },
+    "schema": 2,
+    "name": "CFEE Router ",
+    "public": false,
+    "favorite": false,
+    "shared": false,
+    "teamId": 3969,
+    "modifiedOn": 1574128374000,
+    "username": "ff1d25c81c197c3fb4f907fe0976f22d_8ca2ef99-a7bf-44a3-a2f0-0c785e6a70fc_ibmid-060001xby2@ibm.com",
+    "createdOn": 1573689566000,
+    "publicToken": null,
+    "autoCreated": false
+  }
+}
