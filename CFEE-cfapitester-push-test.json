@@ -1,0 +1,445 @@
+{
+  "dashboard": {
+    "customerId": 12415,
+    "userId": 5092,
+    "domain": null,
+    "widgets": [
+      {
+        "showAs": "timeSeries",
+        "name": "cf push <app> => Result (0=success, 1=failed)\n",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 1,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": 1
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"command\") and kubernetes.namespace.name in (\"monitoring\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_overall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cf push <app> => Total Duration\n",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 1,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"command\") and kubernetes.namespace.name in (\"monitoring\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg",
+            "metricFormattingDecimals": 0
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "curl <app.domain> => Result (0=success, 1=failed)\n",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 5,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": 1
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"command\") and kubernetes.namespace.name in (\"monitoring\") and command in (\"curl\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_overall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "curl <app.domain> => Total Duration\n",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 5,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"command\") and kubernetes.namespace.name in (\"monitoring\") and command in (\"curl\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg",
+            "metricFormattingDecimals": 0
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cf logs <app> --recent => Result (0=success, 1=failed)\n",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 9,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": 1
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type = \"command\" and kubernetes.namespace.name = \"monitoring\" and command = \"logs\"",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_overall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cf logs <app> --recent => Total Duration\n",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 9,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type = \"command\" and kubernetes.namespace.name = \"monitoring\" and command = \"logs\"",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg",
+            "metricFormattingDecimals": 0
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cf delete <app> => Result (0=success, 1=failed)\n",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 13,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": 1
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type = \"command\" and kubernetes.namespace.name = \"monitoring\" and command = \"delete\"",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_overall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cf delete <app> --recent => Total Duration\n",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 13,
+          "size_x": 6,
+          "size_y": 4
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type = \"command\" and kubernetes.namespace.name = \"monitoring\" and command = \"delete\"",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_command_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg",
+            "metricFormattingDecimals": 0
+          }
+        ],
+        "compareToConfig": null
+      }
+    ],
+    "scopeExpressionList": null,
+    "eventsOverlaySettings": {
+      "showNotificationsEnabled": true,
+      "filterNotificationsScopeFilter": true,
+      "filterNotificationsUserInputFilter": "",
+      "eventOverlayLimit": 1000,
+      "filterNotificationsTypeFilter": "all",
+      "filterNotificationsStateFilter": "all",
+      "filterNotificationsSeverityFilter": "all",
+      "filterNotificationsResolvedFilter": "all"
+    },
+    "version": 61,
+    "shared": true,
+    "schema": 2,
+    "modifiedOn": 1580919860000,
+    "autoCreated": false,
+    "teamId": 5267,
+    "username": "fc6ba2f0e1a30062c51ab8809eff6bdc_fee47728-d1b9-4e3b-beb5-6de8b40b502b_ibmid-120000qe43@ibm.com",
+    "publicToken": null,
+    "createdOn": 1580289072000,
+    "favorite": false,
+    "name": "CFEE - CfApiTester - Push Test - Sub Command Details\n",
+    "id": 26627,
+    "public": false
+  }
+}
