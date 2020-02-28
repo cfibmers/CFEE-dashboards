@@ -1,0 +1,475 @@
+{
+  "dashboard": {
+    "customerId": 12415,
+    "userId": 5092,
+    "domain": null,
+    "widgets": [
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester - Node Performance  - CPU\n",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 1,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_cpuUsage_percent",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_cpuUsageCfApiTester_percent",
+            "propertyName": "v1",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_cpuUsageCfCli_percent",
+            "propertyName": "v2",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester - Node Performance  - Memory",
+        "gridConfiguration": {
+          "col": 4,
+          "row": 1,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_memoryUsage_percent",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_memoryUsageCfApiTester_percent",
+            "propertyName": "v1",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_memoryUsageCfCli_percent",
+            "propertyName": "v2",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester - Node Performance  -  Root Disk Usage\n",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 1,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_rootDiskUsage_percent",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester - Node Performance  -  Network",
+        "gridConfiguration": {
+          "col": 10,
+          "row": 1,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_networkRxTrafficEth0",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkRxTrafficEth1",
+            "propertyName": "v1",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkRxTrafficLo",
+            "propertyName": "v2",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkRxTrafficSum",
+            "propertyName": "v3",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkTxTrafficEth0",
+            "propertyName": "v4",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkTxTrafficEth1",
+            "propertyName": "v5",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkTxTrafficLo",
+            "propertyName": "v6",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          },
+          {
+            "id": "cfapitester_internal_networkTxTrafficSum",
+            "propertyName": "v7",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester - Uptime",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 4,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_uptime_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester -  Test Count\n",
+        "gridConfiguration": {
+          "col": 4,
+          "row": 4,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_testCount",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester -  Count Of Stored Traces\n",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 4,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_traceCountOverall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "cfApiTester -  Size Of Stored Traces",
+        "gridConfiguration": {
+          "col": 10,
+          "row": 4,
+          "size_x": 3,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": null,
+        "overrideScope": false,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "cfapitester_internal_traceSizeOverall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      }
+    ],
+    "scopeExpressionList": null,
+    "eventsOverlaySettings": {
+      "showNotificationsEnabled": true,
+      "filterNotificationsScopeFilter": true,
+      "filterNotificationsUserInputFilter": "",
+      "eventOverlayLimit": 1000,
+      "filterNotificationsTypeFilter": "all",
+      "filterNotificationsStateFilter": "all",
+      "filterNotificationsSeverityFilter": "all",
+      "filterNotificationsResolvedFilter": "all"
+    },
+    "version": 54,
+    "shared": true,
+    "schema": 2,
+    "createdOn": 1580398315000,
+    "teamId": 5267,
+    "modifiedOn": 1580994871000,
+    "autoCreated": false,
+    "username": "fc6ba2f0e1a30062c51ab8809eff6bdc_fee47728-d1b9-4e3b-beb5-6de8b40b502b_ibmid-120000qe43@ibm.com",
+    "publicToken": null,
+    "favorite": false,
+    "name": "CFEE - cfApiTester - Internal Metrics",
+    "id": 26765,
+    "public": false
+  }
+}

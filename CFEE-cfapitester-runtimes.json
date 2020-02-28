@@ -1,0 +1,441 @@
+{
+  "dashboard": {
+    "customerId": 12415,
+    "userId": 5092,
+    "domain": null,
+    "widgets": [
+      {
+        "showAs": "timeSeries",
+        "name": "Result (0=success, 1=failed)",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 1,
+          "size_x": 12,
+          "size_y": 2
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": 1
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"runtime\") and kubernetes.namespace.name in (\"monitoring\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_action_overall",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Duration",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 3,
+          "size_x": 12,
+          "size_y": 2
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"runtime\") and kubernetes.namespace.name in (\"monitoring\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_action_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Create App",
+        "gridConfiguration": {
+          "col": 1,
+          "row": 5,
+          "size_x": 2,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"event\") and kubernetes.namespace.name in (\"monitoring\") and event in (\"eventCreatingApp\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_event_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Mapping Routes",
+        "gridConfiguration": {
+          "col": 3,
+          "row": 5,
+          "size_x": 2,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"event\") and kubernetes.namespace.name in (\"monitoring\") and event in (\"eventMappingRoutes\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_event_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Download App Package",
+        "gridConfiguration": {
+          "col": 5,
+          "row": 5,
+          "size_x": 2,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"event\") and kubernetes.namespace.name in (\"monitoring\") and event in (\"eventDownloadingAppPackage\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_event_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Download Buildpack",
+        "gridConfiguration": {
+          "col": 7,
+          "row": 5,
+          "size_x": 2,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"event\") and kubernetes.namespace.name in (\"monitoring\") and event in (\"eventDownloadingBuildPack\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_event_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Upload Droplet\n",
+        "gridConfiguration": {
+          "col": 9,
+          "row": 5,
+          "size_x": 2,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"event\") and kubernetes.namespace.name in (\"monitoring\") and event in (\"eventUploadingDroplet\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_event_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      },
+      {
+        "showAs": "timeSeries",
+        "name": "Start App",
+        "gridConfiguration": {
+          "col": 11,
+          "row": 5,
+          "size_x": 2,
+          "size_y": 3
+        },
+        "customDisplayOptions": {
+          "valueLimit": {
+            "count": 10,
+            "direction": "desc"
+          },
+          "histogram": {
+            "numberOfBuckets": 10
+          },
+          "yAxisScale": "linear",
+          "yAxisLeftDomain": {
+            "from": 0,
+            "to": null
+          },
+          "yAxisRightDomain": {
+            "from": 0,
+            "to": null
+          },
+          "xAxis": {
+            "from": 0,
+            "to": null
+          }
+        },
+        "scope": "metric_type in (\"event\") and kubernetes.namespace.name in (\"monitoring\") and event in (\"eventWaitingForAppToStart\") and command in (\"push\")",
+        "overrideScope": true,
+        "metrics": [
+          {
+            "id": "timestamp",
+            "propertyName": "k0"
+          },
+          {
+            "id": "app",
+            "propertyName": "k1"
+          },
+          {
+            "id": "cfapitester_event_duration_seconds",
+            "propertyName": "v0",
+            "timeAggregation": "avg",
+            "groupAggregation": "avg"
+          }
+        ],
+        "compareToConfig": null
+      }
+    ],
+    "scopeExpressionList": null,
+    "eventsOverlaySettings": {
+      "showNotificationsEnabled": true,
+      "filterNotificationsScopeFilter": true,
+      "filterNotificationsUserInputFilter": "",
+      "eventOverlayLimit": 1000,
+      "filterNotificationsTypeFilter": "all",
+      "filterNotificationsStateFilter": "all",
+      "filterNotificationsSeverityFilter": "all",
+      "filterNotificationsResolvedFilter": "all"
+    },
+    "schema": 2,
+    "version": 48,
+    "shared": false,
+    "publicToken": null,
+    "teamId": 5267,
+    "username": "fc6ba2f0e1a30062c51ab8809eff6bdc_fee47728-d1b9-4e3b-beb5-6de8b40b502b_ibmid-120000qe43@ibm.com",
+    "autoCreated": false,
+    "createdOn": 1580907504000,
+    "modifiedOn": 1580919700000,
+    "favorite": false,
+    "name": "CfApiTester - Runtimes",
+    "id": 26979,
+    "public": false
+  }
+}

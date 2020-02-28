@@ -4,6 +4,22 @@
 
 IBM Cloud Monitoring with Sysdig is powered by Sysdig in partnership with IBM, which is proposed monitoring solution for IBM IKS and CFEE. Follow the steps below to create CFEE operation dashboard and Alerts in Sysdig.
 
+## CFEE releases
+###  CFEE release 5.0
+This release is compatible with below dashobards which can be further consumed by Sysdig.
+1. CFEEDiego.json
+2. CFEERouter.json
+3. CFEECell.json
+
+### CFEE release 6.0
+In this release we have CFEE with eirini plan implemented. Dashboard `CFEERouter.json` is the common dashboard works all CFEE plans. `CFEECell.json` and `CFEEDiego.json` will work with CFEE without eiriniplan only.
+
+We have added new dashboards for `cfapitester` component. They are the common dashboards applicable for CFEE on Eirini and non-Eirini clusters
+1. CFEE-cfapitester-internal-metrics.json
+2. CFEE-cfapitester-push-test.json
+3. CFEE-cfapitester-runtimes.json
+They are only valid on current CFEE release 6.0
+
 # Prerequisites
 
 - Follow this link to get Sysdig [API Token](https://cloud.ibm.com/docs/services/Monitoring-with-Sysdig?topic=Sysdig-api_token)
